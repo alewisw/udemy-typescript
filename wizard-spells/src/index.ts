@@ -61,9 +61,10 @@ class FrostSpell extends Spell {
 
 
 //
-// NOTE SPECIAL
+// NOTE SPECIAL CONDITIONAL TYPE!!!!
 //
 type SpellName<S> = S extends FireSpell ? FireSpellName : FrostSpellName
+
 
 class Wizard<T extends Spell> {
   private _spellBook: T[]
